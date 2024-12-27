@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1>Perfil de Usuario</h1>
+    <div class="profile-info">
+        <p>Bienvenido, {{ user.username }}!</p>
+        <p>Email: {{ user.email }}</p>
+    </div>
+</div>
+{% endblock %}
